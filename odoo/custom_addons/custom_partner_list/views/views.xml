@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <record id="view_partner_tree_inherit_lang" model="ir.ui.view">
+      <field name="name">res.partner.tree.inherit.lang</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_tree"/>
+      <field name="arch" type="xml">
+        <field name="country_id" position="after">
+          <field name="lang"/>
+        </field>
+      </field>
+    </record>
+  </data>
+</odoo>
