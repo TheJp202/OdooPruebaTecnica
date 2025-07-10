@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+<data>
+  <record id="sale_channel_team" model="sale.channel">
+    <field name="name">Equipo de Ventas</field>
+  </record>
+
+  <record id="sale_channel_website" model="sale.channel">
+    <field name="name">Sitio Web</field>
+  </record>
+  </data>
+</odoo>
