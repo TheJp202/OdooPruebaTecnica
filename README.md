@@ -1,37 +1,60 @@
-# Odoo
+## Vista general
 
-[![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
-[![Documentation](https://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/17.0)
-[![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
-[![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
+![Menú principal](capturas/menu.png)
 
-Odoo is a suite of web based open source business apps.
+Esta es mi prueba técnica en donde se incorporan una serie de modificaciones que simplifican el día a día de quienes usan Odoo en ventas y facturación.Todos estos ejercicios fueron realizados en Odoo 17 community.
 
-The main Odoo Apps include an [Open Source CRM](https://www.odoo.com/page/crm),
-[Website Builder](https://www.odoo.com/app/website),
-[eCommerce](https://www.odoo.com/app/ecommerce),
-[Warehouse Management](https://www.odoo.com/app/inventory),
-[Project Management](https://www.odoo.com/app/project),
-[Billing &amp; Accounting](https://www.odoo.com/app/accounting),
-[Point of Sale](https://www.odoo.com/app/point-of-sale-shop),
-[Human Resources](https://www.odoo.com/app/employees),
-[Marketing](https://www.odoo.com/app/social-marketing),
-[Manufacturing](https://www.odoo.com/app/manufacturing),
-[...](https://www.odoo.com/)
+---
 
-Odoo Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
-a full-featured [Open Source ERP](https://www.odoo.com) when you install several Apps.
+### 1. Idioma visible en la lista de clientes  
+![Ejercicio 1](capturas/ejercicio1.png)  
+Ahora, cuando abres la lista de clientes en el Punto de Venta, ves una columna extra que muestra el idioma preferido de cada persona.
 
-## Getting started with Odoo
+---
 
-For a standard installation please follow the [Setup instructions](https://www.odoo.com/documentation/17.0/administration/install/install.html)
-from the documentation.
+### 2. Alerta de precio cero  
+![Ejercicio 2](capturas/ejercicio2.png)  
+Si alguien intenta vender un producto cuyo precio está en $ 0.00, aparece un aviso inmediato. Esto evita regalar artículos por error y protege la caja sin interrumpir el flujo de venta.
 
-To learn the software, we recommend the [Odoo eLearning](https://www.odoo.com/slides),
-or [Scale-up, the business game](https://www.odoo.com/page/scale-up-business-game).
-Developers can start with [the developer tutorials](https://www.odoo.com/documentation/17.0/developer/howtos.html).
+---
 
-## Security
+### 3. Botón «Boleta» con total a pagar  
+![Ejercicio 3](capturas/ejercicio3.png)  
+En la pantalla de cobro del POS verás un nuevo botón llamado **Boleta**. Al tocarlo se abre una ventanita que muestra el monto total que debe pagar el cliente.
 
-If you believe you have found a security issue, check our [Responsible Disclosure page](https://www.odoo.com/security-report)
-for details and get in touch with us via email.
+---
+
+### 4. QR en la factura  
+![Ejercicio 4](capturas/ejercicio4.png)  
+Las facturas impresas llevan un código QR que contiene los datos esenciales (número, cliente, fecha, cantidades y total). Con él, cualquiera puede escanear y revisar la información clave al instante.
+
+---
+
+### 5. Serie y correlativo separados  
+![Ejercicio 5](capturas/ejercicio5.png)  
+El número de factura ahora se divide en **Serie** (ej. INV2025) y **Correlativo** (ej. 00000008). Así es más fácil referirse a los documentos y llevar un control ordenado.
+
+---
+
+### 6. Canal de ventas al alcance  
+![Ejercicio 6](capturas/ejercicio6.png)  
+Justo debajo del nombre del vendedor aparece un nuevo campo: **Canal de ventas**. Sirve para clasificar la factura (equipo de ventas, sitio web, etc.).
+
+---
+
+### 7. Fecha y hora de emisión  
+![Ejercicio 7](capturas/ejercicio7.png)  
+El campo «Fecha de factura» se ocultó y fue reemplazado por **Fecha de emisión**, que incluye tanto la fecha como la hora exacta. De esta forma el registro refleja con precisión cuándo se emitió el documento, útil para auditorías y plazos legales.
+
+---
+
+### 8. Datos clave en el PDF  
+![Ejercicio 8](capturas/ejercicio8.png)  
+Los cambios de los puntos 5, 6 y 7 (serie, correlativo, canal y fecha/hora) se muestran igualmente en la versión impresa o PDF de la factura.
+
+---
+
+### 9. Transferencias asociadas  
+![Ejercicio 9](capturas/ejercicio9.png)  
+Cada factura luce un recuadro con todas las transferencias de almacén vinculadas al pedido que la generó. Esto facilita rastrear los movimientos de salida.
+
