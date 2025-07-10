@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "custom_partner_list",
+    'name': "Personalización Contactos Lista",
     'summary': "Muestra el idioma configurado en la lista de contactos",
     'description': """
 Este módulo agrega la visualización de la columna "Idioma" configurado para cada contacto en la vista de lista del modelo res.partner.
