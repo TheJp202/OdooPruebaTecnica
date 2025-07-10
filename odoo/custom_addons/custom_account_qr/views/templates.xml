@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+    <template id="report_invoice_qr_inherit" inherit_id="account.report_invoice_document">
+      <xpath expr="//span[@t-field='o.payment_reference']/.." position="after">
+        <div t-if="o.x_qr_invoice"
+             style="margin-top:8px; text-align:left;
+                    page-break-inside:avoid; break-inside:avoid;">
+          <img t-att-src="'data:image/png;base64,%s' % o.x_qr_invoice.decode()"
+               style="width:110px; height:110px;"/>
+        </div>
+      </xpath>
+    </template>
+    </data>
+</odoo>
