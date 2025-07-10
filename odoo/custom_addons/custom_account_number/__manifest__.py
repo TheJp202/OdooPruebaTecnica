@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "Personalización Factura QR",
-    "summary": "Añade un código QR al PDF de la factura",
+    "name": "Personalización Factura Número",
+    "summary": "Genera número de serie y correlativo en la factura.",
     "description": """
-Este modulo inserta un código QR en el PDF de la factura generada.
-El QR se forma con: Número|Cliente|Fecha|TotalCantidades|TotalAPagar
+Este módulo concatena las dos primeras secciones del nombre sin separadores y los guarda en un campo como la serie.
+También guarda la tercera sección en un campo como el correlativo.
 """,
     "author": "Jean Pierre Llamoca Corpus",
     "website": "https://github.com/TheJp202/OdooPruebaTecnica/",
@@ -22,5 +22,4 @@ El QR se forma con: Número|Cliente|Fecha|TotalCantidades|TotalAPagar
     'application': False,
     'demo': [],
 }
-
 
